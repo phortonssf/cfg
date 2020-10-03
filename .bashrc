@@ -117,3 +117,4 @@ if ! shopt -oq posix; then
 fi
 alias config='/usr/bin/git --git-dir=/home/digitaldive/.cfg/ --work-tree=/home/digitaldive'
 alias config='/usr/bin/git --git-dir=/home/digitaldive/.cfg/ --work-tree=/home/digitaldive'
+alias config='/usr/bin/git --git-dir=/home/digitaldive/.cfg/ --work-tree=/home/digitaldive'
