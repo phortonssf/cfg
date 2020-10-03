@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/digitaldive'
+let g:netrw_dirhist_9='/home/digitaldive/squashfs-root/usr/bin'
+let g:netrw_dirhist_8='/home'
+let g:netrw_dirhist_7='/home/digitaldive/vr-toby'
+let g:netrw_dirhist_6='/home/digitaldive'
+let g:netrw_dirhist_5='/mnt/c/Users/Pedro'
+let g:netrw_dirhist_4='/home/digitaldive/digitaldive/.oh-m-zsh'
+let g:netrw_dirhist_3='/home/digitaldive/digitaldive'
+let g:netrw_dirhist_2='/home/digitaldive'
+let g:netrw_dirhist_1='/home/digitaldive/.config/nvim'
