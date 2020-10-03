@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/digitaldive/.config'
+let g:netrw_dirhist_5='/home/digitaldive'
+let g:netrw_dirhist_4='/home/digitaldive/.vim'
+let g:netrw_dirhist_3='/home/digitaldive'
+let g:netrw_dirhist_2='/home/digitaldive/.config/nvim'
+let g:netrw_dirhist_1='/home/digitaldive/.config'
