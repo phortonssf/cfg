@@ -22,7 +22,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
  
-colorscheme gruvbox
+"colorscheme gruvbox
 
 
 "*********     Key Remaps   ****************
