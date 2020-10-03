@@ -8,6 +8,9 @@ case $- in
       *) return;;
 esac
 
+#Config alias for bare dot repo files
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
