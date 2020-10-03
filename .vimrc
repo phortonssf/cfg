@@ -11,8 +11,8 @@ set smartindent
 "Line numbers absolute
 set nu
 "Line numbers relative
-:set relativenumber
-:set rnu
+set relativenumber
+set rnu
 set nowrap
  
 set smartcase
@@ -22,7 +22,9 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
  
- 
+colorscheme gruvbox
+
+
 "*********     Key Remaps   ****************
 "Map Leader to space bar
 nnoremap <SPACE> <Nop>
@@ -71,14 +73,14 @@ hi InsertColor guifg=Black guibg=Magenta ctermbg=51 ctermfg=0
 hi ReplaceColor guifg=Black guibg=maroon1 ctermbg=165 ctermfg=0
 hi VisualColor guifg=Black guibg=Orange ctermbg=202 ctermfg=0
 
- set statusline+=%#NormalColor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
- set statusline+=%#InsertColor#%{(mode()=='i')?'\ \ INSERT\ ':''}
- set statusline+=%#ReplaceColor#%{(mode()=='R')?'\ \ REPLACE\ ':''}
- set statusline+=%#VisualColor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+set statusline+=%#NormalColor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+set statusline+=%#InsertColor#%{(mode()=='i')?'\ \ INSERT\ ':''}
+set statusline+=%#ReplaceColor#%{(mode()=='R')?'\ \ REPLACE\ ':''}
+set statusline+=%#VisualColor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
 
 " first, enable status line always
- set laststatus=2
-"
+set laststatus=2
+
 " " now set it up to change the status line based on mode
  if version >= 700
    au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
