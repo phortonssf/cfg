@@ -24,3 +24,9 @@ let mapleader="\<Space>"
 nnoremap <leader>o o<esc>
 "ss space in normal mode
 nnoremap <leader><space> i<space><esc>
+
+
+" copy and past from vim/nvim to windows  text to .vimbuffer
+ vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+ " paste from buffer
+ map <C-v> :r ~/.vimbuffer<CR>
