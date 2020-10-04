@@ -48,6 +48,11 @@ alias 8='cd -8'
 alias 9='cd -9'
 
 
+##############  GIT ALIASES ############
+
+#remove all branches but master
+alias gbDA='git branch | egrep -v "(master|\*)" | xargs git branch -D'
+
 # Us eemacs keybindings even if our EDITOR is set to vi
 bindkey -e
 
