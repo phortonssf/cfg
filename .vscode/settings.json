@@ -1,0 +1,46 @@
+{
+  "workbench.panel.defaultLocation": "right",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "ProFont for Powerline",
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "ortsOnFileMove.enabled": "always",
+
+
+  "window.zoomLevel": 4,
+  
+  "timeline.excludeSources": ["git-history"],
+  "vscode-neovim.useWSL": true,
+
+  "vscode-neovim.neovimPath": "/usr/bin/nvim",
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/bin/nvim",
+  "sync.gist": "5af82a61e9d2348cc1ee5e61d7be7400",
+
+  "sync.quietSync": true,
+  "editor.detectIndentation": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "todo-tree.tree.showScanModeButton": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.suggestSelection": "first",
+  "polacode.backgroundColor": "#e0e0e0",
+  "polacode.transparentBackground": true,
+  "polacode.target": "container",
+  "polacode.shadow": "rgba(0, 0, 0, 0.55) 0px 20px 200px",
+  "tabnine.experimentalAutoImports": true,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "editor.renderWhitespace": "none",
+  "remote.SSH.configFile": "C:\\Users\\Pedro\\.ssh\\config",
+  "remote.SSH.remotePlatform": {
+    "vigrisk-dev": "linux",
+    "vigrisk-prod": "linux"
+  },
+  "python.languageServer": "Microsoft",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.lineNumbers": "relative"
+}
