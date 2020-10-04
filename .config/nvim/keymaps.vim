@@ -30,3 +30,4 @@ nnoremap <leader><space> i<space><esc>
  vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
  " paste from buffer
  map <C-v> :r ~/.vimbuffer<CR>
+ :nnoremap <C-m> <c-v>
