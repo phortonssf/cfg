@@ -1,0 +1,110 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "command": "vscode-neovim.compositeEscape2",
+    "key": "k",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "k"
+  },
+  {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
+  },
+  {
+    "key": "alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+j",
+    "command": "notebook.cell.copyDown",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-notebook.cell.copyDown",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  
+  {
+    "key": "alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+oem_3",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "command": "-vscode-neovim.send",
+    "key": "ctrl+'"
+},
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear"
+  },
+  {
+    "command": "-vscode-neovim.send",
+    "key": "ctrl+d"
+},
+{
+  "key": "ctrl+o",
+  "command": "workbench.action.navigateBack",
+  "when": "editorTextFocus && !neovim.recording && neovim.mode != 'insert'"
+},
+{
+  "key": "ctrl+i",
+  "command": "workbench.action.navigateForward",
+  "when": "editorTextFocus && !neovim.recording && neovim.mode != 'insert'"
+},
+  {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && neovim.mode != 'visual'"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && neovim.mode != 'visual'"
+    },
+    {
+        "key": "alt+j",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-j>"
+    },
+    {
+        "key": "alt+k",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-k>"
+    },
+    {
+        "key": "alt+h",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-h>"
+    },
+    {
+        "key": "alt+l",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-l>"
+    }
+]
