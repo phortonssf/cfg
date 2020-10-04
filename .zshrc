@@ -17,6 +17,12 @@ export PATH=$PATH:/mnt/c/Windows/System32
 # Path to your oh-my-zsh installation
 export ZSH="/home/digitaldive/.oh-my-zsh"
 
+##### NEEDS TO LOAD BEFORE SOURCING OH-MY-ZSH  #######
+zstyle :omz:plugins:ssh-agent id_github
+zstyle :omz:plugins:ssh-agent lifetime 4h
+
+
+
 #source ~/.oh-my-zsh/templates/zshrc.zsh-template
 source ~/.zsh-plugins.zsh
 ZSH_THEME="agnoster"
