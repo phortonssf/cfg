@@ -2,7 +2,7 @@
 source ~/.vimrc
 source ~/.config/nvim/keymaps.vim
 
-"" Space setting
+" Space setting
 set list
 set shiftround
 set autoindent
@@ -12,3 +12,9 @@ set smarttab
 set tabstop=2
 
 "colorscheme gruvbox
+
+
+"Plugins Start
+call plug#begin('~/.vim/plugged')
+  Plug 'matze/vim-move'
+call plug#end()
