@@ -44,9 +44,10 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+
 "Remap jj to esc"
-imap jj <Esc>
-imap kk <Esc>
+"imap jj <Esc>
+"imap kk <Esc>
  
 "set termguicolors
 
