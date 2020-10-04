@@ -1,4 +1,4 @@
 .cfg
 .ssh/*.pem
 .ssh/id_rsa
-
+.z
