@@ -17,4 +17,6 @@ set tabstop=2
 "Plugins Start
 call plug#begin('~/.vim/plugged')
   Plug 'matze/vim-move'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 call plug#end()
