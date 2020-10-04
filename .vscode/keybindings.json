@@ -72,5 +72,39 @@
   "key": "ctrl+i",
   "command": "workbench.action.navigateForward",
   "when": "editorTextFocus && !neovim.recording && neovim.mode != 'insert'"
-}
+},
+  {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && neovim.mode != 'visual'"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && neovim.mode != 'visual'"
+    },
+    {
+        "key": "alt+j",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-j>"
+    },
+    {
+        "key": "alt+k",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-k>"
+    },
+    {
+        "key": "alt+h",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-h>"
+    },
+    {
+        "key": "alt+l",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode == 'visual'",
+        "args": "<A-l>"
+    }
 ]
