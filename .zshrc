@@ -17,7 +17,8 @@ export PATH=$PATH:/mnt/c/Windows/System32
 # Path to your oh-my-zsh installation
 export ZSH="/home/digitaldive/.oh-my-zsh"
 
-source ~/.oh-my-zsh/templates/zshrc.zsh-template
+#source ~/.oh-my-zsh/templates/zshrc.zsh-template
+source ~/.zsh-plugins.zsh
 ZSH_THEME="agnoster"
 
 #Dot file bare git repo alias
@@ -26,6 +27,7 @@ alias initvim="nvim ~/.config/nvim/init.vim"
 alias zshrc="nvim ~/.zshrc"
 alias vimrc="nvim ~/.vimrc"
 alias vimkeys="nvim ~/.config/nvim/keymaps.vim"
+alias zshplugins="nvim ~/.zsh-plugins.zsh"
 
 # Us eemacs keybindings even if our EDITOR is set to vi
 bindkey -e
