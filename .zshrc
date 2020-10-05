@@ -21,12 +21,13 @@ export ZSH="/home/digitaldive/.oh-my-zsh"
 zstyle :omz:plugins:ssh-agent id_github
 zstyle :omz:plugins:ssh-agent lifetime 4h
 
-
-bindkey jj vi-cmd-mode
-
 #source ~/.oh-my-zsh/templates/zshrc.zsh-template
+#bindkey ll autosuggest-accept-line
+#set keymap vi-command Shift-Enter: autosuggest-accept-line
+#set keymap vi-command Alt-l: autosuggest-execute
+#bindkey  autosuggest-execute
 source ~/.zsh-plugins.zsh
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
 
 #Dot file bare git repo alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -35,6 +36,7 @@ alias zshrc="nvim ~/.zshrc"
 alias vimrc="nvim ~/.vimrc"
 alias vimkeys="nvim ~/.config/nvim/keymaps.vim"
 alias zshplugins="nvim ~/.zsh-plugins.zsh"
+alias zshhistory="nvim ~/.zsh_history"
 
 #Dirs ZSH alias
 alias d='dirs -v | head -10'
@@ -48,9 +50,6 @@ alias 7='cd -7'
 alias 8='cd -8'
 alias 9='cd -9'
 
-
-# Us eemacs keybindings even if our EDITOR is set to vi
-bindkey -e
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
@@ -76,6 +75,9 @@ zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 zstyle ':completion:*' menu select=long
+
+
+
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
@@ -89,5 +91,29 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
   else
     export EDITOR='nvim'
   fi
-  bindkey -v
+  # Us eemacs keybindings even if our EDITOR is set to vi
+#bindkey -e
 
+### Vim Mode Configs
+
+#export KEYTIMEOUT=1
+# Bind to bind jj to exit insert mode
+#bindkey ll autosuggest-accept-line
+#Ind-or-complete-or-list-files
+#function expand-or-complete-or-list-files() {
+#  if [[ $#BUFFER == 0 ]]; then
+#     BUFFER="ls "
+#     CURSOR=3
+#     zle list-choices
+#     zle backward-kill-word
+#   else
+#    zle expand-or-complete
+#fi
+#                                                        }
+#zle -N expand-or-complete-or-list-files
+#bind to tab
+#bindkey '^I' expand-or-complete-or-list-files
+#bindkey -s jj vi-cmd-mode
+#bindkey -v
+#bindkey -s jj '\e' 
+bindkey -M viins 'jj' vi-cmd-mode
