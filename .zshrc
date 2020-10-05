@@ -116,4 +116,4 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 #bindkey -s jj vi-cmd-mode
 #bindkey -v
 #bindkey -s jj '\e' 
-bindkey -M viins 'jj' vi-cmd-mode
+#bindkey -M viins 'jj' vi-cmd-mode
