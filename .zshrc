@@ -22,6 +22,7 @@ zstyle :omz:plugins:ssh-agent id_github
 zstyle :omz:plugins:ssh-agent lifetime 4h
 
 
+bindkey jj vi-cmd-mode
 
 #source ~/.oh-my-zsh/templates/zshrc.zsh-template
 source ~/.zsh-plugins.zsh
@@ -88,4 +89,5 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
   else
     export EDITOR='nvim'
   fi
+  bindkey -v
 
