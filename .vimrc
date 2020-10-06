@@ -116,3 +116,9 @@ filetype plugin on
 "" Enable NERDCommenterToggle to check all selected lines is commented or not 
 "let g:NERDToggleCheckAllLines = 1
 
+"Absolute numbers insert mode only
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
