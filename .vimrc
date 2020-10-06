@@ -1,4 +1,5 @@
 syntax on
+
 set guicursor=
 set nohlsearch
 set hidden
@@ -46,8 +47,8 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 
 "Remap jj to esc"
-"imap jj <Esc>
-"imap kk <Esc>
+imap jj <Esc>
+imap kk <Esc>
  
 "set termguicolors
 
@@ -68,25 +69,25 @@ set updatetime=50
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-
-hi NormalColor guifg=Black guibg=Green ctermbg=46 ctermfg=0
-hi InsertColor guifg=Black guibg=Magenta ctermbg=51 ctermfg=0
-hi ReplaceColor guifg=Black guibg=maroon1 ctermbg=165 ctermfg=0
-hi VisualColor guifg=Black guibg=Orange ctermbg=202 ctermfg=0
-
-set statusline+=%#NormalColor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
-set statusline+=%#InsertColor#%{(mode()=='i')?'\ \ INSERT\ ':''}
-set statusline+=%#ReplaceColor#%{(mode()=='R')?'\ \ REPLACE\ ':''}
-set statusline+=%#VisualColor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+"Colors for status line
+"hi NormalColor guifg=Black guibg=Green ctermbg=46 ctermfg=0
+"hi InsertColor guifg=Black guibg=Magenta ctermbg=51 ctermfg=0
+"hi ReplaceColor guifg=Black guibg=maroon1 ctermbg=165 ctermfg=0
+"hi VisualColor guifg=Black guibg=Orange ctermbg=202 ctermfg=0
+"
+"set statusline+=%#NormalColor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+"set statusline+=%#InsertColor#%{(mode()=='i')?'\ \ INSERT\ ':''}
+"set statusline+=%#ReplaceColor#%{(mode()=='R')?'\ \ REPLACE\ ':''}
+"set statusline+=%#VisualColor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
 
 " first, enable status line always
 set laststatus=2
 
 " " now set it up to change the status line based on mode
- if version >= 700
-   au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
-   au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
- endif
+" if version >= 700
+"   au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
+"   au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
+" endif
 
 
 filetype plugin on
